@@ -1548,7 +1548,7 @@
 </head>
 
 <body class="c14 c18">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="saveMyResume">Save Resume</button>
 
     <div>
         <p class="c1 c33"><span class="c6 c30"></span></p>
@@ -1633,17 +1633,15 @@
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        }
     }
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
     </script>
 
