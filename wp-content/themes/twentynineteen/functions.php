@@ -1,5 +1,6 @@
 <?php 
 	function my_scripts() {
+		echo 'here'; die;
 		wp_enqueue_style( 'joefong_style', get_template_directory_uri() . '/css/main.css');
 		wp_enqueue_script('joefong_js', get_template_directory_uri() . '/js/main.js' );
 	}
