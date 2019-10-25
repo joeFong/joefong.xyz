@@ -20,7 +20,7 @@
  */
 
 define('WP_HOME','https://joefong.xyz');
-define('WP_SITEURL','https://www.joefong.xyz');
+define('WP_SITEURL','https://joefong.xyz');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
