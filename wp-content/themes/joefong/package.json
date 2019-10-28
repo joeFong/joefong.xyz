@@ -1,11 +1,7 @@
 {
-  "name": "twentynineteen",
+  "name": "joefong",
   "version": "1.0.0",
-  "description": "Default WP Theme",
-  "bugs": {
-    "url": "https://github.com/WordPress/twentynineteen/issues"
-  },
-  "homepage": "https://github.com/WordPress/twentynineteen#readme",
+  "description": "Joe Fong WP Theme",
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.2.2",
     "autoprefixer": "^9.1.5",
