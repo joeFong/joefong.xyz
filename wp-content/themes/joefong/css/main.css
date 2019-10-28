@@ -1,4 +1,7 @@
 @import url('https://themes.googleusercontent.com/fonts/css?kit=SINUaDLwq-rZPoYbtVuLWqxujb63aLJH_ur8nQ767YNbV0WvE1cEyAoIq5yYZlSc');
+    .site {
+        margin: 10%;
+    }
     .lst-kix_list_14-1>li:before {
         content: "o  "
     }
