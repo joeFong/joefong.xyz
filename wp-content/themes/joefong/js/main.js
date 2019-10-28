@@ -1,13 +1,16 @@
 window.onload = function() {
     //Get the button:
-    mybutton = document.getElementById("myBtn");
+    var saveResumeEl = document.getElementById("myBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
+            saveResumeEl.style.display = "block";
+
+            saveResumeEl.addEventListener("click", saveResume);
+
         }
     }
 
@@ -15,6 +18,6 @@ window.onload = function() {
     function saveResume() {
         //document.body.scrollTop = 0; // For Safari
         //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        alert('function to come soon.');
+        window.location.href = 'https://joefong.xyz/wp-content/uploads/2019/10/JOEMAN-FONG-Resume-Master-1.pdf';
     }
 }
