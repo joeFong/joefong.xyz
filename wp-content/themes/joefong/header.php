@@ -17,9 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<?php wp_head(); ?>
-
-	<!-- <script type="module" src="<?php echo get_template_directory_uri() . '/js/resume-jf/dist/resume-jf.js' ?>"></script> -->
-
 </head>
 
 <body <?php body_class(); ?>>

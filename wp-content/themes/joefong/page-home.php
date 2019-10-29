@@ -8,7 +8,7 @@ get_header();
         <p class="c1 c33"><span class="c6 c30"></span></p>
     </div>
 
-    <resume-jf></resume-jf>
+    <!-- <resume-jf></resume-jf> -->
 
     <p class="c31"><span class="c24 c16 c27">JOEMAN<span class="c24 c27 c16">&nbsp;FONG</span></p>
     <p class="c1"><span class="c12 c34"><a class="c7" href="mailto:JoemanFong@gmail.com">JoemanFong@gmail.com</a></span><span class="c12">&nbsp;| </span><span class="c16 c12">778.883.5667</span><span class="c6 c4">&nbsp;</span></p>
