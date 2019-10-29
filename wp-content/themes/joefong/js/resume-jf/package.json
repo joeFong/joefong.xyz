@@ -1,0 +1,14 @@
+{
+  "name": "resume-jf",
+  "version": "1.0.0",
+  "description": "The Joe Fong resume template as a LitElement.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Fong",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  }
+}
