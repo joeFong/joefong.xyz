@@ -18,7 +18,7 @@ window.onload = function() {
     function saveResume() {
         //document.body.scrollTop = 0; // For Safari
         //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        var win = window.open('https://joefong.xyz/wp-content/uploads/2019/10/JOEMAN-FONG-Resume-Master-1.pdf', '_blank');
+        var win = window.open('https://joefong.xyz/wp-content/uploads/2019/10/joemanfong_resume.pdf', '_blank');
         win.focus();
 
     }
