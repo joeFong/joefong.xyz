@@ -2,7 +2,7 @@
 get_header();
 ?> 
 <body class="c14 c18">
-    <button onclick="topFunction()" id="myBtn" title="saveMyResume">Save Resume</button>
+    <button id="myBtn" title="saveMyResume">Save Resume</button>
     
     <div>
         <p class="c1 c33"><span class="c6 c30"></span></p>
