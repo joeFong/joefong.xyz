@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<?php wp_head(); ?>
 
-	<script type="module" src="<?php echo get_template_directory_uri() . '/js/resume-jf/dist/resume-jf.js' ?>"></script>
+	<!-- <script type="module" src="<?php echo get_template_directory_uri() . '/js/resume-jf/dist/resume-jf.js' ?>"></script> -->
 
 </head>
 
