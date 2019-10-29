@@ -1,5 +1,5 @@
 // Import the LitElement base class and html helper function
-import { LitElement, html } from 'lit-element';
+import { LitElement , html} from '@polymer/lit-element';
 
 // Extend the LitElement base class
 class ResumeJF extends LitElement {
