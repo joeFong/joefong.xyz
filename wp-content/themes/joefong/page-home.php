@@ -3,10 +3,11 @@ get_header();
 ?> 
 <body class="c14 c18">
     <button onclick="topFunction()" id="myBtn" title="saveMyResume">Save Resume</button>
-
+    
     <div>
         <p class="c1 c33"><span class="c6 c30"></span></p>
     </div>
+
     <p class="c31"><span class="c24 c16 c27">JOEMAN<span class="c24 c27 c16">&nbsp;FONG</span></p>
     <p class="c1"><span class="c12 c34"><a class="c7" href="mailto:JoemanFong@gmail.com">JoemanFong@gmail.com</a></span><span class="c12">&nbsp;| </span><span class="c16 c12">778.883.5667</span><span class="c6 c4">&nbsp;</span></p>
     <p class="c1"><span class="c26 c12">&nbsp;</span><span class="c25 c14 c12 c36"><a class="c7" href="https://linkedin.com/in/joemanfong">https://linkedin.com/in/joemanfong</a></span><span class="c12">&nbsp;| </span><span class="c25 c26 c14 c12"><a class="c7" href="https://github.com/joeFong&amp;sa=D&amp;ust=1571819728121000">https://github.com/joeFong</a></span><span class="c20 c14 c12 c26">&nbsp;| </span><span class="c25 c14 c12"><a class="c7" href="https://medium.com/@joemanfong">https://medium.com/@joemanfong</a></span><span class="c14 c12 c20">&nbsp;| </span><span class="c25 c14 c12"><a class="c7" href="https://joefong.xyz">https://</a></span><span class="c12 c25"><a class="c7" href="https://joefong.xyz&amp;sa=D&amp;ust=1571819728123000">joefong.xyz</a></span><span class="c6 c12 c32">&nbsp;</span></p>
@@ -20,7 +21,7 @@ get_header();
         <li class="c17 c5"><span class="c3 c4">2+ years of experience working with relational databases including; </span><span class="c8 c4">MySQL</span><span class="c3 c4">, </span><span class="c8 c4">SQL Server</span></li>
         <li class="c17 c5"><span class="c3 c4">2+ years of experience working with open-source libraries and frameworks including; </span><span class="c9">Laravel</span><span class="c14 c12">, </span><span class="c9">Drupal</span><span class="c14 c12">, </span><span class="c9">Wordpress,</span><span class="c14 c12">&nbsp;</span><span class="c9">Socket.IO, </span><span class="c8 c4">Web Driver.IO</span><span class="c3 c4">,</span><span class="c8 c4">&nbsp;Jest</span><span class="c3 c4">, </span><span class="c9">AngularJS</span><span class="c14 c12">, </span><span class="c9">Angular 2-4</span><span class="c14 c12">, </span><span class="c9">React, React Native</span><span class="c14 c12">, </span><span class="c9">Redux </span><span class="c3 c4">and </span><span class="c8 c4">Polymer, LitHTML</span><span class="c9">, VueJS</span><span class="c14 c12">, </span></li>
         <li class="c1 c5"><span class="c6 c4">2+ years of experience operating in an agile development environment with </span><span class="c4 c16 c28">LAMP </span><span class="c6 c4">and </span><span class="c28 c4 c16">LEMP </span><span class="c6 c4">stack</span></li>
-        <li class="c1 c5"><span class="c12">3+ years working in a </span><span class="c16 c12">Linux OS </span><span class="c12">with strong version controlling practises in </span><span class="c12 c16">GIT</span><span class="c6 c4">&nbsp;</span></li>
+        <li class="c1 c5"><span class="c12">3+ years working in a </span><span class="c16 c12">Linux OS </span><span class="c12">as a DevOps Engineer with experience working in a Cloud environment using various cloud technologies such as AWS EC2, Dockers, Containers, Vultr, Digital Ocean, Iocage, and Nginx Reverse Proxies</span></li>
     </ul>
     <h1 class="c19"><span class="c24 c11 c16">Experience</span></h1>
     <p class="c1"><span class="c24 c4 c16">Devradius | Full Stack Developer | April 2017 - Present</span></p>
