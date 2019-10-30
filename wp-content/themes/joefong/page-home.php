@@ -309,6 +309,12 @@ get_header();
         var editor = ace.edit("editor");
         editor.setTheme("ace/theme/monokai");
         editor.session.setMode("ace/mode/javascript");
+        
+        editor.session.on('change', function(delta) {
+            // delta.start, delta.end, delta.lines, delta.action
+            var value = editor.getValue(); // or session.getValue
+            console.log(value);
+        });
     </script>
 
     <button id="saveResume" title="saveMyResume">Save Resume</button>
