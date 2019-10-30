@@ -142,6 +142,7 @@ get_header();
         ]
         }
         var resume = document.getElementById('resume');
+        console.log(resume);
         resume.resume = "'" + resume + "'";
     </script>
     <resume-jf id="resume"></resume-jf>
