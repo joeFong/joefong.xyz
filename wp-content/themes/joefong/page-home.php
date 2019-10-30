@@ -144,7 +144,7 @@ get_header();
         ]
         }
         var resume = document.getElementById('resume');
-        resume.setAttribute('resume', "'" + resumeObj + "'");
+        resume.setAttribute('resume', JSON.stringify(resumeObj));
     </script>
 
     <button id="myBtn" title="saveMyResume">Save Resume</button>
