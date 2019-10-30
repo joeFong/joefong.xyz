@@ -47,9 +47,16 @@
     display: none;
 }
 
+#editor {
+    height: 300px;
+}
+
 @media only screen and (max-width: 600px) {
     #github {
       display: none;
+    }
+    #editor {
+        display: none;
     }
     #github-mobile {
         display: block;
