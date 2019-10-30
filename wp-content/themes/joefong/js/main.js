@@ -21,4 +21,9 @@ window.onload = function() {
         var win = window.open('https://joefong.xyz/wp-content/uploads/2019/10/joemanfong_resume.pdf', '_blank');
         win.focus();
     }
+
+
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
 }
