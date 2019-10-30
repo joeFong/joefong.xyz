@@ -2,6 +2,8 @@
 get_header();
 ?> 
 <body class="c14 c18">
+    <resume-jf id="resume"></resume-jf>
+
     <script>
         var resume = {
         firstName: "asdas",
@@ -145,7 +147,7 @@ get_header();
         console.log(resume);
         resume.resume = "'" + resume + "'";
     </script>
-    <resume-jf id="resume"></resume-jf>
+    
     <button id="myBtn" title="saveMyResume">Save Resume</button>
 </body>
 
