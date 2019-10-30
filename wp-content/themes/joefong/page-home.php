@@ -145,6 +145,8 @@ get_header();
         }
         var resume = document.getElementById('resume');
         resume.setAttribute('resume', JSON.stringify(resumeObj));
+
+        
     </script>
 
     <div id="github">
@@ -166,6 +168,12 @@ get_header();
             <a class="code-links" target="_blank" href="https://www.npmjs.com/package/resume-jf"><i class="fab fa-npm"></i></a>
         </p>
     </div>
+
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/javascript");
+    </script>
 
     <button id="saveResume" title="saveMyResume">Save Resume</button>
 </body>
