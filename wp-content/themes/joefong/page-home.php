@@ -4,7 +4,7 @@ get_header();
 <body class="c14 c18">
     <script>
         var resume = {
-        firstName: "Joeman",
+        firstName: "asdas",
         lastName: "Fong",
         email: "joemanfong@gmail.com",
         phoneNumber: "778.883.5667",
