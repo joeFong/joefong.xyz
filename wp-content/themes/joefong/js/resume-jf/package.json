@@ -16,6 +16,8 @@
   "author": "Joe Fong",
   "license": "ISC",
   "dependencies": {
+    "html2canvas": "^1.0.0-rc.5",
+    "jspdf": "^1.5.3",
     "lit-element": "^2.2.1"
   },
   "devDependencies": {

@@ -318,7 +318,6 @@ get_header();
         });
     </script>
 
-    <button id="saveResume" title="saveMyResume">Save Resume</button>
 </body>
 
 </html>
