@@ -288,8 +288,8 @@ get_header();
                 "educationCompleted": "Associates Degree, Graduated With Distinctions, Computer Technology/Computer Systems Technology"
                 }
             ]
-        };
-        }</div>
+        }
+        </div>
         <p>Need a resume? But it takes too long to create one? Make one in 2 minutes with resume-jf, a lighting fast LitElement Web Component. Embeddable in any browser, and can be converted into a PDF in a click of a button.</p>
         <p>
             <a class="code-links" target="_blank" href="https://github.com/joeFong/resume-jf"><i class="fab fa-github"></i></a>
@@ -314,7 +314,7 @@ get_header();
             // delta.start, delta.end, delta.lines, delta.action
             var value = editor.getValue(); // or session.getValue
             var resume = document.getElementById('resume');
-            console.log(value);
+            console.log(JSON.parse(value));
             resume.setAttribute('resume', JSON.stringify(value));
         });
     </script>
