@@ -20,6 +20,5 @@ window.onload = function() {
         //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         var win = window.open('https://joefong.xyz/wp-content/uploads/2019/10/joemanfong_resume.pdf', '_blank');
         win.focus();
-
     }
 }
