@@ -37,7 +37,7 @@ class ResumeJF extends LitElement {
 
     const input = this.shadowRoot.getElementById('resumeContainer');
     var cln = input.cloneNode(true);
-    cln.style.opacity = 0;
+    // cln.style.opacity = 0;
     document.body.appendChild(cln);
 
     html2canvas(cln)
@@ -45,7 +45,6 @@ class ResumeJF extends LitElement {
         const imgData = canvas.toDataURL('image/png');
         const pdf = new jsPDF();
         pdf.addImage(imgData, 'JPEG', 0, 0);
-        // pdf.output('dataurlnewwindow');
         pdf.save("download.pdf");
       })
     ;
