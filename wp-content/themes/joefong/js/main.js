@@ -1,6 +1,6 @@
 window.onload = function() {
     //Get the button:
-    var saveResumeEl = document.getElementById("myBtn");
+    var saveResumeEl = document.getElementById("saveResume");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
