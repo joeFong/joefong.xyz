@@ -6,7 +6,7 @@ get_header();
 
     <script>
         var resumeObj = {
-        firstName: "asdas",
+        firstName: "Joeman",
         lastName: "Fong",
         email: "joemanfong@gmail.com",
         phoneNumber: "778.883.5667",
