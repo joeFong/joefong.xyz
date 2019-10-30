@@ -144,10 +144,9 @@ get_header();
         ]
         }
         var resume = document.getElementById('resume');
-        console.log(resume);
-        resume.resume = "'" + resume + "'";
+        resume.setAttribute('resume', "'" + resume + "'");
     </script>
-    
+
     <button id="myBtn" title="saveMyResume">Save Resume</button>
 </body>
 
