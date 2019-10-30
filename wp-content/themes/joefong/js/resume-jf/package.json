@@ -1,7 +1,7 @@
 {
   "name": "resume-jf",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A litElement web component to easily deploy your resume on your personal website.",
   "main": "resume-jf.js",
   "directories": {
     "test": "test"
@@ -9,7 +9,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joeFong/resume-jf.git"
+  },
+  "author": "Joe Fong",
   "license": "ISC",
   "dependencies": {
     "lit-element": "^2.2.1"

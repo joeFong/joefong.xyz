@@ -147,7 +147,11 @@ get_header();
         resume.setAttribute('resume', JSON.stringify(resumeObj));
     </script>
 
-    <button id="myBtn" title="saveMyResume">Save Resume</button>
+    <div id="github">
+        <p>Need a resume? Takes too long to create one? Make one in 2 minutes with resume-jf, a lighting fast litElement Web Component. Embeddable in any browser, and can be converted into a PDF in a click of a button.</p>
+    </div>
+
+    <button id="saveResume" title="saveMyResume">Save Resume</button>
 </body>
 
 </html>
