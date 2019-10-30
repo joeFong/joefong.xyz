@@ -104,7 +104,7 @@ class ResumeJF extends LitElement {
      */
 
     if(this.theme == 'classic') {
-      return classicTheme();
+      return this.classicTheme();
     } 
     return html`
     <div class="c14 c18">

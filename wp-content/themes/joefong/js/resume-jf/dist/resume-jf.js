@@ -611,7 +611,7 @@ h6 {
           <p class="c33 c35"><span class="c6 c11"></span></p>
       </div>
     </div>
-    `}render(){return"classic"==this.theme?classicTheme():$`
+    `}render(){return"classic"==this.theme?this.classicTheme():$`
     <div class="c14 c18">
       <p>A Theme is required.</p>
     </div>
