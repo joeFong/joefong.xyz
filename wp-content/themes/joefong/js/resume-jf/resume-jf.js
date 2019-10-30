@@ -162,8 +162,12 @@ class ResumeJF extends LitElement {
     //     }
     //   ]
     // }
+  }
+
+  firstUpdated(changedProperties) { 
     console.log(this.resume);
   }
+
 
   /**
    * Implement `render` to define a template for your element.
