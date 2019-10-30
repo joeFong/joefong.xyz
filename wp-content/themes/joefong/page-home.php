@@ -5,7 +5,7 @@ get_header();
     <resume-jf id="resume"></resume-jf>
 
     <script>
-        var resume = {
+        var resumeObj = {
         firstName: "asdas",
         lastName: "Fong",
         email: "joemanfong@gmail.com",
@@ -144,7 +144,7 @@ get_header();
         ]
         }
         var resume = document.getElementById('resume');
-        resume.setAttribute('resume', "'" + resume + "'");
+        resume.setAttribute('resume', "'" + resumeObj + "'");
     </script>
 
     <button id="myBtn" title="saveMyResume">Save Resume</button>
