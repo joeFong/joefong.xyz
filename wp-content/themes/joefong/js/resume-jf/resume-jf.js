@@ -5,6 +5,7 @@ import { resumePlaceholder } from './resume-data.js';
 import html2canvas from 'html2canvas';
 import * as jsPDF from 'jspdf'
 
+
 // Extend the LitElement base class
 class ResumeJF extends LitElement {
   static get styles() {
@@ -37,14 +38,14 @@ class ResumeJF extends LitElement {
 
     const input = this.shadowRoot.getElementById('resumeContainer');
     var cln = input.cloneNode(true);
-    cln.style.opacity = 0;
+    // cln.style.opacity = 0;
     document.body.appendChild(cln);
     var resumeEl = document.getElementById('resumeContainer');
     html2canvas(resumeEl)
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF();
-        pdf.addImage(imgData, 'JPEG', 0, 0);
+        const pdf = new jsPDF("portrait", "mm", "a4");
+        pdf.addImage(imgData, 'PNG', 10, 10);
         pdf.save("download.pdf");
         resumeEl.remove();
       })
