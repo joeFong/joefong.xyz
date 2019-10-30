@@ -151,7 +151,7 @@ get_header();
 
     <div id="github">
         <div id="editor">
-        var resumeObj = {
+        {
         firstName: "Joeman",
         lastName: "Fong",
         email: "joemanfong@gmail.com",
@@ -313,7 +313,8 @@ get_header();
         editor.session.on('change', function(delta) {
             // delta.start, delta.end, delta.lines, delta.action
             var value = editor.getValue(); // or session.getValue
-            console.log(value);
+            var resume = document.getElementById('resume');
+            resume.setAttribute('resume', JSON.stringify(resumeObj));
         });
     </script>
 
