@@ -308,12 +308,13 @@ get_header();
     <script>
         var editor = ace.edit("editor");
         editor.setTheme("ace/theme/monokai");
-        editor.session.setMode("ace/mode/javascript");
+        editor.session.setMode("ace/mode/json");
         
         editor.session.on('change', function(delta) {
             // delta.start, delta.end, delta.lines, delta.action
             var value = editor.getValue(); // or session.getValue
             var resume = document.getElementById('resume');
+            console.log(value);
             resume.setAttribute('resume', value);
         });
     </script>
