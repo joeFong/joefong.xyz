@@ -314,6 +314,7 @@ get_header();
             // delta.start, delta.end, delta.lines, delta.action
             var value = editor.getValue(); // or session.getValue
             var resume = document.getElementById('resume');
+            console.log(JSON.parse(value));
             resume.setAttribute('resume', JSON.stringify(value));
         });
     </script>
