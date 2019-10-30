@@ -457,6 +457,10 @@ h6 {
     text-align: right;
 }
 
+.code-text-container {
+    margin: 2%;
+}
+
 @media only screen and (max-width: 600px) {
     #github {
       display: none;
