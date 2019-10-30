@@ -4,14 +4,10 @@ import { resumeStyles } from './resume-styles.js';
 import { resumePlaceholder } from './resume-data.js';
 
 // Extend the LitElement base class
-class Resume extends LitElement {
+class ResumeJF extends LitElement {
   static get styles() {
     return [
-      resumeStyles,
-      css`
-      :host { 
-        display: block; 
-      }`
+      resumeStyles
     ]
   }
 
@@ -118,4 +114,4 @@ class Resume extends LitElement {
   }
 }
 // Register the new element with the browser.
-customElements.define('resume', Resume);
+customElements.define('resume-jf', ResumeJF);
