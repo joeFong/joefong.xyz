@@ -37,21 +37,27 @@ class ResumeJF extends LitElement {
 
 
     const input = this.shadowRoot.getElementById('resumeContainer');
-
-    input.scrollIntoView();
-    
     var cln = input.cloneNode(true);
     cln.style.margin = '10%';
     document.body.appendChild(cln);
     var resumeEl = document.getElementById('resumeContainer');
     html2canvas(resumeEl)
       .then((canvas) => {
-        var imgData = canvas.toDataURL("image/png");
-        var pdf = new jsPDF('p', 'pt', [canvas.width, canvas.height]);
-        var pdfWidth = pdf.internal.pageSize.getWidth();
-        var pdfHeight = pdf.internal.pageSize.getHeight();
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-        pdf.save("mypdf.pdf");
+        canvas.width = document.body.clientWidth
+
+        var width = canvas.width;
+        var height = canvas.height;
+        var millimeters = {};
+        millimeters.width = Math.floor(width * 0.264583);
+        millimeters.height = Math.floor(height * 0.264583);
+
+        var imgData = canvas.toDataURL(
+            'image/png');
+        var doc = new jsPDF("p", "mm", "a4");
+        doc.deletePage(1);
+        doc.addPage(millimeters.width, millimeters.height);
+        doc.addImage(imgData, 'PNG', 0, 0);
+        doc.save('WebSiteScreen.pdf');
         // resumeEl.remove();
       })
     ;
