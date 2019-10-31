@@ -50,26 +50,8 @@ class ResumeJF extends LitElement {
         millimeters.width = Math.floor(width * 0.264583);
         millimeters.height = Math.floor(height * 0.264583);
 
-        var imgWidth = millimeters.width; 
-        var pageHeight = millimeters.height;  
-        var imgHeight = canvas.height * imgWidth / canvas.width;
-        var heightLeft = imgHeight;
-  
         var doc = new jsPDF("p", "mm", "a4");
-        var position = 0;
-
-        // doc.addImage(imgData, 'JPEG', 0, 15, millimeters.width, millimeters.height);
-
-        doc.addImage(imgData, 'PNG', 0, 15, imgWidth, imgHeight);
-        heightLeft -= pageHeight;
-
-        while (heightLeft >= 0) {
-          position = heightLeft - imgHeight;
-          doc.addPage();
-          doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-          heightLeft -= pageHeight;
-        }
-
+        doc.addImage(imgData, 'PNG', 0, 15, millimeters.width, millimeters.height);
         doc.save('WebSiteScreen.pdf');
         // resumeEl.remove();
       })
