@@ -40,30 +40,30 @@ class ResumeJF extends LitElement {
     var cln = input.cloneNode(true);
     document.body.appendChild(cln);
     var resumeEl = document.getElementById('resumeContainer');
-    html2canvas(resumeEl)
-      .then((canvas) => {
-        // var imgData = canvas.toDataURL('image/jpeg', 1.0);
 
-        // var width = canvas.width;
-        // var height = canvas.height;
-        // var millimeters = {};
-        // millimeters.width = Math.floor(width * 0.264583);
-        // millimeters.height = Math.floor(height * 0.264583);
+    var options = {
+      pagesplit: true //include this in your code
+    };
+    var pdf = new jsPDF('p', 'pt', 'a4');
+    pdf.addHTML(resumeEl, 15, 15, options, function() {
+      pdf.save('Menu.pdf');
+    });
 
-        // var doc = new jsPDF("p", "mm", "a4");
-        // doc.addImage(imgData, 'JPEG', 0, 15, millimeters.width, millimeters.height);
-        // doc.save('resume.pdf');
-        // resumeEl.remove();
+    // html2canvas(resumeEl)
+    //   .then((canvas) => {
+    //     // var imgData = canvas.toDataURL('image/jpeg', 1.0);
 
-        var options = {
-          pagesplit: true //include this in your code
-        };
-        var pdf = new jsPDF('p', 'pt', 'a4');
-        pdf.addHTML(canvas, 15, 15, options, function() {
-          pdf.save('resume.pdf');
-        });
-      })
-    ;
+    //     // var width = canvas.width;
+    //     // var height = canvas.height;
+    //     // var millimeters = {};
+    //     // millimeters.width = Math.floor(width * 0.264583);
+    //     // millimeters.height = Math.floor(height * 0.264583);
+
+    //     // var doc = new jsPDF("p", "mm", "a4");
+    //     // doc.addImage(imgData, 'JPEG', 0, 15, millimeters.width, millimeters.height);
+    //     // doc.save('resume.pdf');
+    //     // resumeEl.remove();
+    //   });
   }
 
   classicTheme() {
