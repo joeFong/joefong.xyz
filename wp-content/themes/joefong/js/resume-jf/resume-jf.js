@@ -48,7 +48,7 @@ class ResumeJF extends LitElement {
         const pdf = new jsPDF("portrait", "mm", "a4");
         pdf.addImage(imgData, 'PNG', 10, 10);
         pdf.save("download.pdf");
-        resumeEl.remove();
+        // resumeEl.remove();
       })
     ;
   }
