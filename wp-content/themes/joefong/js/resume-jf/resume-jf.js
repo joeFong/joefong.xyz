@@ -40,12 +40,13 @@ class ResumeJF extends LitElement {
     var cln = input.cloneNode(true);
     document.body.appendChild(cln);
     var resumeEl = document.getElementById('resumeContainer');
-    
+    resumeEl.scrollIntoView();
+        
     html2canvas(resumeEl)
       .then((canvas) => {
         var imgData = canvas.toDataURL('image/png', 1.0);
         var doc = new jsPDF("l", "pt", "a4");
-        
+
         var width = canvas.width;
         var height = canvas.height;
         var millimeters = {};
