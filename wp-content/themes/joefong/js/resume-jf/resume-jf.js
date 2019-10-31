@@ -38,7 +38,6 @@ class ResumeJF extends LitElement {
 
     const input = this.shadowRoot.getElementById('resumeContainer');
     var cln = input.cloneNode(true);
-    cln.style.margin = '10%';
     document.body.appendChild(cln);
     var resumeEl = document.getElementById('resumeContainer');
     html2canvas(resumeEl)
@@ -51,8 +50,8 @@ class ResumeJF extends LitElement {
         millimeters.width = Math.floor(width * 0.264583);
         millimeters.height = Math.floor(height * 0.264583);
 
-        var imgData = canvas.toDataURL(
-            'image/png');
+        var imgData = canvas.toDataURL('image/png');
+
         var doc = new jsPDF("p", "mm", "a4");
         doc.deletePage(1);
         doc.addPage(millimeters.width, millimeters.height);
