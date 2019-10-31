@@ -45,8 +45,7 @@ class ResumeJF extends LitElement {
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png');
         const pdf = new jsPDF("portrait", "mm", "a4");
-        pdf.addImage(imgData, 'PNG', 10, 10);
-        console.log(imgData);
+        pdf.addImage(imgData, 'PNG');
         pdf.save("download.pdf");
         // resumeEl.remove();
       })
@@ -68,6 +67,46 @@ class ResumeJF extends LitElement {
             html`<span class="c6 c12 c32">&nbsp;</span>`}
         `)}
       </p>
+      <h1 class="c29"><span class="c24 c11 c16">PROFESSIONAL SUMMARY</span></h1>
+      <ul class="c23 lst-kix_list_14-0 start">
+        ${this.resume.professionalSummary.map((val) => html`
+          <li class="c17 c5">
+            <span class="c14 c12">
+              ${val.skill}
+              ${val.bolded.map((boldedValue, index, array) => html`
+                <span class="c8 c4">${boldedValue}</span>${array.length != (index + 1) ? html`<span class="c3 c4">, </span>` : html`<span class="c3 c4"></span>`}
+              `)}
+            </span>
+          </li>
+        `)}
+      </ul>
+      <h1 class="c19"><span class="c24 c11 c16">Experience</span></h1>
+      ${this.resume.experience.map((val, index, array) => html`
+        <p class="c1"><span class="c24 c4 c16">${val.jobTitle} | ${val.role} | ${val.duration}</span></p>
+        <p class="c1"><span class="c12 c37">${val.summaryOfCompany}</span></p>
+        <ul class="c23 lst-kix_list_2-0 start">
+          ${val.bulletsOfRole.map((bullets) => html`
+            <li class="c0"><span class="c6 c4">${bullets}</li>
+          `)}
+        </ul>
+      `)}
+      
+      <h1 class="c19"><span class="c24 c11 c16">KEY PROJECTS</span></h1>
+      ${this.resume.keyProjects.map((val) => html`
+        <p class="c10"><span class="c24 c4 c16">${val.role} (Client: ${val.projectName})</span></p>
+        <ul class="c23 lst-kix_list_2-0">
+        ${val.bulletsOfRole.map((bullets) => html`
+          <li class="c0"><span class="c6 c4">${bullets}</span></li>
+        `)}
+        </ul>
+      `)}
+      <h1 class="c19" id="h.aljsgaeh8u18"><span class="c24 c11 c16">Education</span></h1>
+      ${this.resume.education.map((val) => html`
+        <p class="c1"><span>${val.schoolName} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${val.yearCompleted}<br>${val.educationCompleted}</span></p>
+      `)}
+      <div>
+          <p class="c33 c35"><span class="c6 c11"></span></p>
+      </div>
     </div>
 
     <button @click="${this.saveResume}" id="saveResume" title="saveMyResume">Save Resume</button>
