@@ -37,6 +37,9 @@ class ResumeJF extends LitElement {
 
 
     const input = this.shadowRoot.getElementById('resumeContainer');
+
+    input.scrollIntoView();
+    
     var cln = input.cloneNode(true);
     cln.style.margin = '10%';
     document.body.appendChild(cln);
