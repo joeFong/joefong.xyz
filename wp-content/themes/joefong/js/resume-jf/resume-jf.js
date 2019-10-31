@@ -59,8 +59,8 @@ class ResumeJF extends LitElement {
           pagesplit: true //include this in your code
         };
         var pdf = new jsPDF('p', 'pt', 'a4');
-        pdf.addHTML($(resumeEl), 15, 15, options, function() {
-          pdf.save('Menu.pdf');
+        pdf.addHTML(resumeEl, 15, 15, options, function() {
+          pdf.save('resume.pdf');
         });
       })
     ;
