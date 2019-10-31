@@ -38,13 +38,13 @@ class ResumeJF extends LitElement {
 
     const input = this.shadowRoot.getElementById('resumeContainer');
     var cln = input.cloneNode(true);
-    // cln.style.opacity = 0;
+    cln.style.margin = '10%';
     document.body.appendChild(cln);
     var resumeEl = document.getElementById('resumeContainer');
     html2canvas(resumeEl)
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF("portrait", "mm", "a4");
+        const pdf = new jsPDF();
         pdf.addImage(imgData, 'PNG', 0, 0);
         pdf.save("download.pdf");
         // resumeEl.remove();
