@@ -45,7 +45,7 @@ class ResumeJF extends LitElement {
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png');
         const pdf = new jsPDF("portrait", "mm", "a4");
-        pdf.addImage(imgData, 'PNG');
+        pdf.addImage(imgData, 'PNG', 0, 0);
         pdf.save("download.pdf");
         // resumeEl.remove();
       })
