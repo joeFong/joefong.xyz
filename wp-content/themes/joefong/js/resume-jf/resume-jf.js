@@ -41,12 +41,12 @@ class ResumeJF extends LitElement {
     // cln.style.opacity = 0;
     document.body.appendChild(cln);
     var resumeEl = document.getElementById('resumeContainer');
-    console.log(resumeEl);
     html2canvas(resumeEl)
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png');
         const pdf = new jsPDF("portrait", "mm", "a4");
         pdf.addImage(imgData, 'PNG', 10, 10);
+        console.log(imgData);
         pdf.save("download.pdf");
         // resumeEl.remove();
       })
