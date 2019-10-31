@@ -46,8 +46,12 @@ class ResumeJF extends LitElement {
         var imgData = canvas.toDataURL('image/png', 1.0);
         var doc = new jsPDF("l", "pt", "b1");
         
-        var width = doc.internal.pageSize.getWidth();
-        var height = doc.internal.pageSize.getHeight();
+        var width = canvas.width;
+        var height = canvas.height;
+        var millimeters = {};
+        millimeters.width = Math.floor(width * 0.264583);
+        millimeters.height = Math.floor(height * 0.264583);
+        
         doc.addImage(imgData, 'PNG', 0, 0, width, height);
 
         doc.save('resume.pdf');
