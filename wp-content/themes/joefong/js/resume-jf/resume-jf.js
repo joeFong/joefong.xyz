@@ -57,7 +57,7 @@ class ResumeJF extends LitElement {
         while (heightLeft >= 0) {
           position = heightLeft - imgHeight;
           pdf.addPage();
-          doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+          pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
           heightLeft -= pageHeight;
         }
 
