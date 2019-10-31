@@ -40,6 +40,7 @@ class ResumeJF extends LitElement {
     var cln = input.cloneNode(true);
     document.body.appendChild(cln);
     var resumeEl = document.getElementById('resumeContainer');
+    
     html2canvas(resumeEl)
       .then((canvas) => {
         var imgData = canvas.toDataURL('image/jpeg', 1.0);
