@@ -749,46 +749,6 @@ h6 {
           ${A.length!=e+1?R`<span class="c12"> | </span>`:R`<span class="c6 c12 c32">&nbsp;</span>`}
         `)}
       </p>
-      <h1 class="c29"><span class="c24 c11 c16">PROFESSIONAL SUMMARY</span></h1>
-      <ul class="c23 lst-kix_list_14-0 start">
-        ${this.resume.professionalSummary.map(t=>R`
-          <li class="c17 c5">
-            <span class="c14 c12">
-              ${t.skill}
-              ${t.bolded.map((t,e,A)=>R`
-                <span class="c8 c4">${t}</span>${A.length!=e+1?R`<span class="c3 c4">, </span>`:R`<span class="c3 c4"></span>`}
-              `)}
-            </span>
-          </li>
-        `)}
-      </ul>
-      <h1 class="c19"><span class="c24 c11 c16">Experience</span></h1>
-      ${this.resume.experience.map((t,e,A)=>R`
-        <p class="c1"><span class="c24 c4 c16">${t.jobTitle} | ${t.role} | ${t.duration}</span></p>
-        <p class="c1"><span class="c12 c37">${t.summaryOfCompany}</span></p>
-        <ul class="c23 lst-kix_list_2-0 start">
-          ${t.bulletsOfRole.map(t=>R`
-            <li class="c0"><span class="c6 c4">${t}</li>
-          `)}
-        </ul>
-      `)}
-      
-      <h1 class="c19"><span class="c24 c11 c16">KEY PROJECTS</span></h1>
-      ${this.resume.keyProjects.map(t=>R`
-        <p class="c10"><span class="c24 c4 c16">${t.role} (Client: ${t.projectName})</span></p>
-        <ul class="c23 lst-kix_list_2-0">
-        ${t.bulletsOfRole.map(t=>R`
-          <li class="c0"><span class="c6 c4">${t}</span></li>
-        `)}
-        </ul>
-      `)}
-      <h1 class="c19" id="h.aljsgaeh8u18"><span class="c24 c11 c16">Education</span></h1>
-      ${this.resume.education.map(t=>R`
-        <p class="c1"><span>${t.schoolName} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${t.yearCompleted}<br>${t.educationCompleted}</span></p>
-      `)}
-      <div>
-          <p class="c33 c35"><span class="c6 c11"></span></p>
-      </div>
     </div>
 
     <button @click="${this.saveResume}" id="saveResume" title="saveMyResume">Save Resume</button>
