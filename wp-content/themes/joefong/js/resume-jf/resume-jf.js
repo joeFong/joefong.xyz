@@ -50,7 +50,7 @@ class ResumeJF extends LitElement {
         millimeters.width = Math.floor(width * 0.264583);
         millimeters.height = Math.floor(height * 0.264583);
 
-        var doc = new jsPDF("p", "mm", "a4");
+        var doc = new jsPDF("p", "px", "a4");
         doc.addImage(imgData, 'JPEG', 0, 15, width, height);
         doc.save('WebSiteScreen.pdf');
         // resumeEl.remove();
