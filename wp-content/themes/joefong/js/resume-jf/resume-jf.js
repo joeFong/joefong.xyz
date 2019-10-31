@@ -42,8 +42,6 @@ class ResumeJF extends LitElement {
     var resumeEl = document.getElementById('resumeContainer');
     html2canvas(resumeEl)
       .then((canvas) => {
-        canvas.width = document.body.clientWidth
-
         var imgData = canvas.toDataURL('image/jpeg', 1.0);
 
         var doc = new jsPDF("p", "mm", "a4");
