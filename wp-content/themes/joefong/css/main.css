@@ -47,6 +47,8 @@
 
 
 #saveResume {
+    cursor: pointer;
+    width: 100px;
     display: block; /* Hidden by default */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
