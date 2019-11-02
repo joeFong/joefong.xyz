@@ -49,7 +49,7 @@
 #saveResume {
     cursor: pointer;
     width: 100px;
-    display: block; /* Hidden by default */
+    display: inline; /* Hidden by default */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: red; /* Set a background color */
