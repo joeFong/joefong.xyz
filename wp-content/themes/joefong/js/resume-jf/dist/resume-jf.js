@@ -346,7 +346,7 @@ const D=(e,t)=>`${e}--${t}`;let F=!0;void 0===window.ShadyCSS?F=!1:void 0===wind
 
 .c18 {
     max-width: 500.2pt;
-    padding: 64.8pt 53.2pt 72pt 58.5pt
+    padding: 44.8pt 33.5pt 52pt 33.5pt
 }
 
 .c36 {

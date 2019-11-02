@@ -212,7 +212,7 @@ export const resumeStyles = css`
 
 .c18 {
     max-width: 500.2pt;
-    padding: 64.8pt 53.2pt 72pt 58.5pt
+    padding: 44.8pt 33.5pt 52pt 33.5pt
 }
 
 .c36 {
