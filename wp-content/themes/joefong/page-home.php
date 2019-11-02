@@ -170,7 +170,7 @@ get_header();
         var editor = ace.edit("editor");
         editor.setTheme("ace/theme/monokai");
         editor.session.setMode("ace/mode/json");
-        editor.setValue(resumeObj);
+        editor.setValue("'" + resumeObj + "'");
         
         editor.session.on('change', function(delta) {
             // delta.start, delta.end, delta.lines, delta.action
