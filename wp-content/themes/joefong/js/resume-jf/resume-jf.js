@@ -69,7 +69,7 @@ class ResumeJF extends LitElement {
         </ul>
       `)}
       
-      <h1 class="c19"><span class="c24 c11 c16">KEY PROJECTS</span></h1>
+      <h1 id="page-break-1" class="c19"><span class="c24 c11 c16">KEY PROJECTS</span></h1>
       ${this.resume.keyProjects.map((val) => html`
         <p class="c10"><span class="c24 c4 c16">${val.role} (Client: ${val.projectName})</span></p>
         <ul class="c23 lst-kix_list_2-0">

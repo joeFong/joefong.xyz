@@ -403,6 +403,12 @@ h6 {
     text-align: left
 }
 
+@media print {
+    #page-break-1 {
+        page-break-before: always;
+    }
+  }
+
 @media only screen and (max-width: 600px) {
     .c18 {
         max-width: 500.2pt;
