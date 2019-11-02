@@ -143,10 +143,8 @@ get_header();
                     }
                 ]
             }`;
-        var resume = document.getElementById('resume');
-        resume.setAttribute('resume', JSON.stringify(resumeObj));
-
-        
+            var resume = document.getElementById('resume');
+            resume.setAttribute('resume', resumeObj);    
     </script>
 
     <div id="github">
@@ -173,7 +171,6 @@ get_header();
         editor.setValue(resumeObj);
         
         editor.session.on('change', function(delta) {
-            // delta.start, delta.end, delta.lines, delta.action
             var value = editor.getValue(); // or session.getValue
             var resume = document.getElementById('resume');
             resume.setAttribute('resume', JSON.stringify(JSON.parse(value)));
