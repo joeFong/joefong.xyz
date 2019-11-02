@@ -146,7 +146,7 @@ window.onload = function() {
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/monokai");
     editor.session.setMode("ace/mode/json");
-    editor.setValue(resumeObj);
+    editor.setValue(resumeObj, -1);
     
     editor.session.on('change', function() {
         var value = editor.getValue(); // or session.getValue
