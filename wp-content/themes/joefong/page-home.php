@@ -5,7 +5,7 @@ get_header();
     <resume-jf id="resume"></resume-jf>
 
     <script>
-        var resumeObj = {
+        var resumeObj = `{
         firstName: "Joeman",
         lastName: "Fong",
         email: "joemanfong@gmail.com",
@@ -142,7 +142,7 @@ get_header();
                 educationCompleted: "Associates Degree, Graduated With Distinctions, Computer Technology/Computer Systems Technology"
                 }
             ]
-        };
+        }`;
         var resume = document.getElementById('resume');
         resume.setAttribute('resume', JSON.stringify(resumeObj));
 
@@ -170,7 +170,7 @@ get_header();
         var editor = ace.edit("editor");
         editor.setTheme("ace/theme/monokai");
         editor.session.setMode("ace/mode/json");
-        editor.setValue("'" + resumeObj + "'");
+        editor.setValue(resumeObj);
         
         editor.session.on('change', function(delta) {
             // delta.start, delta.end, delta.lines, delta.action
