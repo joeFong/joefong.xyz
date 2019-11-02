@@ -22,5 +22,17 @@ window.onload = function() {
         win.focus();
     }
 
-
 }
+
+
+var editor = ace.edit("editor");
+editor.setTheme("ace/theme/monokai");
+editor.session.setMode("ace/mode/json");
+editor.setValue(resumeObj);
+editor.removeSelectionMarker();
+
+editor.session.on('change', function(delta) {
+    var value = editor.getValue(); // or session.getValue
+    var resume = document.getElementById('resume');
+    resume.setAttribute('resume', JSON.stringify(JSON.parse(value)));
+});
