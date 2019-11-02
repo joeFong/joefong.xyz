@@ -2,9 +2,6 @@
 import { LitElement, html } from 'lit-element';
 import { resumeStyles } from './resume-styles.js';
 import { resumePlaceholder } from './resume-data.js';
-import html2canvas from 'html2canvas';
-import * as jsPDF from 'jspdf'
-
 
 // Extend the LitElement base class
 class ResumeJF extends LitElement {
