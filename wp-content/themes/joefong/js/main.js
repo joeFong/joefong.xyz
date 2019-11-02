@@ -147,7 +147,6 @@ window.onload = function() {
     editor.setTheme("ace/theme/monokai");
     editor.session.setMode("ace/mode/json");
     editor.setValue(resumeObj);
-    editor.removeSelectionMarker();
     
     editor.session.on('change', function() {
         var value = editor.getValue(); // or session.getValue
