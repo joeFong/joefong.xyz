@@ -158,12 +158,7 @@ window.onload = function() {
     var saveResume = document.getElementById("saveResume")
     
     if(saveResume) {
-        saveResume.addEventListener("click", print);
-    }
-
-
-    function print() {
-        window.print();
+        saveResume.addEventListener("click", () => window.print());
     }
 
 }
