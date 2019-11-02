@@ -33,34 +33,6 @@ class ResumeJF extends LitElement {
     this.resume = resumePlaceholder;
   }
 
-  saveResume(e) {
-
-
-    const input = this.shadowRoot.getElementById('resumeContainer');
-    var cln = input.cloneNode(true);
-    document.body.appendChild(cln);
-    var resumeEl = document.getElementById('resumeContainer');
-    resumeEl.scrollIntoView();
-        
-    html2canvas(resumeEl)
-      .then((canvas) => {
-        var imgData = canvas.toDataURL('image/png', 1.0);
-        var doc = new jsPDF("p", "mm", "a4");
-
-        var width = canvas.width;
-        var height = canvas.height;
-        var millimeters = {};
-        millimeters.width = Math.floor(width * 0.264583);
-        millimeters.height = Math.floor(height * 0.264583);
-        
-        doc.addImage(imgData, 'PNG', 0, 0, millimeters.width, millimeters.height);
-
-        doc.save('resume.pdf');
-        resumeEl.remove();
-      })
-    ;
-  }
-
   classicTheme() {
     return html`
     <div id="resumeContainer" class="c14 c18">
@@ -117,8 +89,6 @@ class ResumeJF extends LitElement {
           <p class="c33 c35"><span class="c6 c11"></span></p>
       </div>
     </div>
-
-    <button @click="${this.saveResume}" id="saveResume" title="saveMyResume">Save Resume</button>
     `;
   }
 
