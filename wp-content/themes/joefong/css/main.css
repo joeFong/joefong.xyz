@@ -6,6 +6,12 @@
     #editor {
         display: none;
     }
+    #code-text-container {
+        display: none;
+    }
+    #code-link-container {
+        display: none;
+    }
 }
 
 #github {
