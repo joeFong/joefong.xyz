@@ -161,10 +161,11 @@ window.onload = function() {
         saveResume.addEventListener("click", print);
     }
 
+
+    function print() {
+        window.print();
+    }
+
 }
 
-
-function print() {
-    window.print();
-}
 
