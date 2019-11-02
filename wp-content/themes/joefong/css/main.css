@@ -6,10 +6,10 @@
     #editor {
         display: none;
     }
-    #code-text-container {
+    .code-text-container {
         display: none;
     }
-    #code-link-container {
+    .code-link-container {
         display: none;
     }
 }
