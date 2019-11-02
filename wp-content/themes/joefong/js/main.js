@@ -154,6 +154,17 @@ window.onload = function() {
         resume.setAttribute('resume', JSON.stringify(JSON.parse(value)));
     });
 
+
+    var saveResume = document.getElementById("saveResume")
+    
+    if(saveResume) {
+        saveResume.addEventListener("click", print);
+    }
+
 }
 
+
+function print() {
+    window.print();
+}
 

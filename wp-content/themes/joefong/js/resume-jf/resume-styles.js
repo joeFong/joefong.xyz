@@ -1,10 +1,6 @@
 import { css } from 'lit-element';
 
-export const resumeStyles = css`
-  .site {
-    margin: 10%;
-  }
-    
+export const resumeStyles = css`    
   
   ol {
       margin: 0;
