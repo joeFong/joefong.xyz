@@ -537,6 +537,12 @@ h6 {
     text-align: left
 }
 
+@media print {
+    #page-break-1 {
+        page-break-before: always;
+    }
+  }
+
 @media only screen and (max-width: 600px) {
     .c18 {
         max-width: 500.2pt;
@@ -579,7 +585,7 @@ h6 {
         </ul>
       `)}
       
-      <h1 class="c19"><span class="c24 c11 c16">KEY PROJECTS</span></h1>
+      <h1 id="page-break-1" class="c19"><span class="c24 c11 c16">KEY PROJECTS</span></h1>
       ${this.resume.keyProjects.map(e=>$`
         <p class="c10"><span class="c24 c4 c16">${e.role} (Client: ${e.projectName})</span></p>
         <ul class="c23 lst-kix_list_2-0">
