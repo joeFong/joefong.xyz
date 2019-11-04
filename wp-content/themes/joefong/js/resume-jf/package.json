@@ -1,8 +1,8 @@
 {
   "name": "resume-jf",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "A litElement web component to easily deploy your resume on your personal website.",
-  "main": "resume-jf.js",
+  "main": "dist/resume-jf.js",
   "directories": {
     "test": "test"
   },
@@ -21,6 +21,8 @@
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.3.0",
+    "lodash.merge": ">=4.6.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
   }

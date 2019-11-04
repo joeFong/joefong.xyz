@@ -2,7 +2,9 @@
 @media print {
     @page :footer {color: #fff }
     @page :header {color: #fff}
-    
+    #github-mobile {
+        display: none;
+    }
     #github {
         display: none;
     }    
